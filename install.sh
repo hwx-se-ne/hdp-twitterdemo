@@ -35,11 +35,7 @@ then
 	exit 1
 fi
 
-# I hate when people distribute stuff from OSX.  Apple, if you're going to fake
-# resource forks on a filesystem that doesn't support them, at least make them
-# contain some kind of value.  Don't pointlessly litter the filesystem because
-# someone back in the late 80s came up with a good idea that you stopped using
-# 15 years ago.
+# OSX has a nasty habit of littering in the filesystem.  Why not at least use dotfiles, folks?
 rm -rf twitterdata/__MACOSX
 
 ### Update names/paths in sample data:
